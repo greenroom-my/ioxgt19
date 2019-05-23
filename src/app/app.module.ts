@@ -7,6 +7,7 @@ import {NavbarComponent} from './_layout/navbar/navbar.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HomepageComponent} from './homepage/homepage.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 
 const appRoutes: Routes = [
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
         RouterModule,
         RouterModule.forRoot(appRoutes),
         FontAwesomeModule,
+        NoopAnimationsModule,
     ],
     providers    : [],
     bootstrap    : [AppComponent]

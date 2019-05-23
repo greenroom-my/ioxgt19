@@ -1,9 +1,27 @@
-<nav class="nav align-items-center">
-  <a class="nav-link mr-auto" href="/">
-    <img src="../../../assets/images/io-logo.png" style="width: 14rem;"/>
-  </a>
-  <a class="nav-link active" href="#">Schedule</a>
-  <a class="nav-link" href="#">Attending</a>
-  <a class="nav-link" href="#">Speaker</a>
-  <a class="nav-link btn btn-primary mr-5" href="#" tabindex="-1" aria-disabled="true">Buy Now</a>
-</nav>
+<div class="container-fluid d-none d-md-block">
+  <div class="row w-100 pt-3">
+    <nav class="nav align-items-center w-100">
+      <a class="nav-link mr-auto" href="/">
+        <img src="../../../assets/images/io-logo.png" style="width: 14rem;"/>
+      </a>
+      <a class="nav-link active" href="#">Schedule</a>
+      <a class="nav-link" href="#">Attending</a>
+      <a class="nav-link" href="#">Speaker</a>
+      <a class="nav-link btn btn-primary" href="#" tabindex="-1" aria-disabled="true">Buy Now</a>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container d-block d-md-none">
+  <div class="row d-flex bd-highlight pt-3">
+    <span style="" class="burgerbar pl-3" (click)="toggleNav()">&#9776;</span>
+    <div id="mySidenav" class="sidenav" [@navBar]="status">
+      <a class="closebtn" (click)="toggleNav()">&times;</a>
+      <a href="#" class="responsive-menu my-3 ml-4">Schedule</a>
+      <a href="#" class="responsive-menu my-3 ml-4">Attending</a>
+      <a href="#" class="responsive-menu my-3 ml-4">Speaker</a>
+      <a class="btn btn-light text-primary my-3 ml-4" href="#">Buy Now</a>
+    </div>
+  </div>
+</div>
