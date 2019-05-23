@@ -6,6 +6,8 @@ import {FooterComponent} from './_layout/footer/footer.component';
 import {NavbarComponent} from './_layout/navbar/navbar.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HomepageComponent} from './homepage/homepage.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+
 
 const appRoutes: Routes = [
     {
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
         BrowserModule,
         RouterModule,
         RouterModule.forRoot(appRoutes),
+        FontAwesomeModule,
     ],
     providers    : [],
     bootstrap    : [AppComponent]
