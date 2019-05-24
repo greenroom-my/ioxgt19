@@ -1,0 +1,42 @@
+<div class="container footer-margin">
+  <section class="row my-5" style="min-height: 200px;">
+    <div class="col-6 d-flex align-items-end">
+      <h3>Schedule</h3>
+    </div>
+    <div class="col-6">
+      <img src="../../assets/images/android-schedule.png" class="w-100">
+    </div>
+  </section>
+
+  <section class="my-5 schedule-wrapper border">
+    <div class="row m-0">
+      <div class="col-md-2 col-4 border-right border-bottom">
+        <div class="schedule-time" *ngFor="let item of items | async">
+          <span class="hours">{{item.hrs}}</span>
+          <span class="minutes"></span>
+        </div>
+      </div>
+      <div class="col-md-10 col-8 border-bottom text-left d-flex align-items-center">
+        <div>
+          <h3>Registration</h3>
+          <p>30min / Registration Area</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-0">
+      <div class="col-md-2 col-4 border-right border-bottom">
+        <div class="schedule-time">
+          <span class="hours">12</span>
+          <span class="minutes">00</span>
+        </div>
+      </div>
+      <div class="col-md-10 col-8 border-bottom text-left d-flex align-items-center">
+        <div>
+          <h3>Registration</h3>
+          <p>30min / Registration Area</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

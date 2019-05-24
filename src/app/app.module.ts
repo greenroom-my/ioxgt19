@@ -8,7 +8,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomepageComponent} from './homepage/homepage.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-
+import {ScheduleModule} from './schedule/schedule.module';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 
 const appRoutes: Routes = [
     {
@@ -35,11 +38,13 @@ const appRoutes: Routes = [
         HomepageComponent
     ],
     imports      : [
+        AngularFireModule.initializeApp(environment.firebaseConfig),
         BrowserModule,
-        RouterModule,
         RouterModule.forRoot(appRoutes),
         FontAwesomeModule,
+        ScheduleModule,
         NoopAnimationsModule,
+        AngularFirestoreModule,
     ],
     providers    : [],
     bootstrap    : [AppComponent]

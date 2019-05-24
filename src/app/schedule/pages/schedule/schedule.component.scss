@@ -1,0 +1,26 @@
+.schedule-wrapper {
+}
+
+.schedule-time {
+  text-align: right;
+  padding: 30px;
+  padding-left: 0;
+  width: 100px;
+  span {
+    display: block;
+    line-height: 1;
+    &.hours {
+      font-size: 3.6rem;
+    }
+    &.minutes {
+      font-size: 2.4rem;
+      color: #4e507c;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .schedule-time {
+    width: 120px;
+  }
+}
