@@ -8,34 +8,35 @@
     </div>
   </section>
 
-  <section class="my-5 schedule-wrapper border">
-    <div class="row m-0">
-      <div class="col-md-2 col-4 border-right border-bottom">
-        <div class="schedule-time" *ngFor="let item of items | async">
-          <span class="hours">{{item.hrs}}</span>
-          <span class="minutes"></span>
+  <section class="scedule-padding">
+    <div class="my-5 schedule-wrapper border">
+      <div class="row m-0" *ngFor="let item of items | async">
+        <div class="col-md-2 col-4 border-right border-bottom">
+          <div class="schedule-time">
+            <div>
+              <span class="hours">{{item.hrs}}</span>
+              <span class="minutes">{{item.time}}</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-10 col-8 border-bottom text-left d-flex align-items-center">
-        <div>
-          <h3>Registration</h3>
-          <p>30min / Registration Area</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="row m-0">
-      <div class="col-md-2 col-4 border-right border-bottom">
-        <div class="schedule-time">
-          <span class="hours">12</span>
-          <span class="minutes">00</span>
+        <div class="col-md-10 col-8 text-left">
+          <div class="row h-100">
+            <div class="col-12 p-3 border-bottom">
+              <h3 class="mb-0">{{item.classroom_one}}</h3>
+              <p class="mb-0 text-black-50">
+                <small>{{item.short_description_one}}</small>
+              </p>
+            </div>
+            <div class="col-12 p-3 border-bottom">
+              <h3 class="mb-0">{{item.classroom_two}}</h3>
+              <p class="mb-0 text-black-50">
+                <small>{{item.short_description_two}}</small>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-10 col-8 border-bottom text-left d-flex align-items-center">
-        <div>
-          <h3>Registration</h3>
-          <p>30min / Registration Area</p>
-        </div>
+
       </div>
     </div>
   </section>

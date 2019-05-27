@@ -1,26 +1,32 @@
-.schedule-wrapper {
-}
-
 .schedule-time {
-  text-align: right;
-  padding: 30px;
-  padding-left: 0;
-  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   span {
     display: block;
     line-height: 1;
     &.hours {
-      font-size: 3.6rem;
+      font-size: 2.0rem;
     }
     &.minutes {
-      font-size: 2.4rem;
-      color: #4e507c;
+      font-size: 1.4rem;
     }
   }
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
+.scedule-padding {
+  min-height: 1450px;
+}
+
 @media (min-width: 768px) {
-  .schedule-time {
-    width: 120px;
-  }
+  //.schedule-time {
+  //  width: 120px;
+  //}
 }
