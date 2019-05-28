@@ -1,28 +1,22 @@
 .schedule-time {
   text-align: center;
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   span {
-    display: block;
-    line-height: 1;
-    &.hours {
-      font-size: 2.0rem;
-    }
     &.minutes {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .scedule-padding {
-  min-height: 1450px;
+  min-height: 1800px;
 }
 
 @media (min-width: 768px) {

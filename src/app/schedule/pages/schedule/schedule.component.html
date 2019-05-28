@@ -14,29 +14,33 @@
         <div class="col-md-2 col-4 border-right border-bottom">
           <div class="schedule-time">
             <div>
-              <span class="hours">{{item.hrs}}</span>
-              <span class="minutes">{{item.time}}</span>
+              <h3 class="hours pt-4">{{item.hrs}} <span class="minutes">{{item.time}}</span></h3>
             </div>
           </div>
         </div>
 
         <div class="col-md-10 col-8 text-left">
           <div class="row h-100">
-            <div class="col-12 p-3 border-bottom">
+            <div class="col-12 p-4 border-bottom">
               <h3 class="mb-0">{{item.classroom_one}}</h3>
               <p class="mb-0 text-black-50">
                 <small>{{item.short_description_one}}</small>
               </p>
+              <p class="mb-0 text-black-50">
+                <small>{{item.topic_one}}</small>
+              </p>
             </div>
-            <div class="col-12 p-3 border-bottom">
+            <div class="col-12 p-4 border-bottom" *ngIf="item.classroom_two">
               <h3 class="mb-0">{{item.classroom_two}}</h3>
               <p class="mb-0 text-black-50">
                 <small>{{item.short_description_two}}</small>
               </p>
+              <p class="mb-0 text-black-50">
+                <small>{{item.topic_two}}</small>
+              </p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
