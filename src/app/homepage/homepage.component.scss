@@ -1,6 +1,6 @@
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .min-height-sponsor {
-    min-height: 450px;
+    min-height: 300px;
   }
 }
 
@@ -12,7 +12,13 @@
 
 @media (min-width: 992px) {
   .min-height-sponsor {
-    min-height: 430px;
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .min-height-sponsor {
+    min-height: 870px;
   }
 }
 
