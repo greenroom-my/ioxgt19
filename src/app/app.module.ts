@@ -13,6 +13,7 @@ import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AttendingModule} from './attending/attending.module';
+import {SpeakerModule} from './speaker/speaker.module';
 
 const appRoutes: Routes = [
     {
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes),
         FontAwesomeModule,
         ScheduleModule,
+        SpeakerModule,
         AttendingModule,
         NoopAnimationsModule,
         AngularFirestoreModule,
