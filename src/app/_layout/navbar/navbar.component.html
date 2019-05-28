@@ -5,7 +5,7 @@
         <img src="../../../assets/images/io-logo.png" style="width: 14rem;"/>
       </a>
       <a class="nav-link active" routerLink="/schedule">Schedule</a>
-      <a class="nav-link" href="#">Attending</a>
+      <a class="nav-link" routerLink="/attending">Attending</a>
       <a class="nav-link" href="#">Speaker</a>
       <a class="nav-link btn btn-primary" href="#" tabindex="-1" aria-disabled="true">Buy Now</a>
     </nav>
@@ -18,8 +18,8 @@
     <span style="" class="burgerbar pl-3" (click)="toggleNav()">&#9776;</span>
     <div id="mySidenav" class="sidenav" [@navBar]="status">
       <a class="closebtn" (click)="toggleNav()">&times;</a>
-      <a href="#" class="responsive-menu my-3 ml-4">Schedule</a>
-      <a href="#" class="responsive-menu my-3 ml-4">Attending</a>
+      <a routerLink="/schedule" routerLinkActive="active" class="responsive-menu my-3 ml-4">Schedule</a>
+      <a routerLink="/attending" class="responsive-menu my-3 ml-4">Attending</a>
       <a href="#" class="responsive-menu my-3 ml-4">Speaker</a>
       <a class="btn btn-light text-primary my-3 ml-4" href="#">Buy Now</a>
     </div>

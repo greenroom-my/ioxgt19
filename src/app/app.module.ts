@@ -12,6 +12,7 @@ import {ScheduleModule} from './schedule/schedule.module';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AttendingModule} from './attending/attending.module';
 
 const appRoutes: Routes = [
     {
@@ -43,6 +44,7 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes),
         FontAwesomeModule,
         ScheduleModule,
+        AttendingModule,
         NoopAnimationsModule,
         AngularFirestoreModule,
     ],
