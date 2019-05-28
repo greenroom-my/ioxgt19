@@ -12,10 +12,12 @@
   </div>
 </div>
 
-
 <div class="container d-block d-md-none">
   <div class="row d-flex bd-highlight pt-3">
-    <span style="" class="burgerbar pl-3" (click)="toggleNav()">&#9776;</span>
+    <a class="nav-link mr-auto" routerLink="">
+      <img src="../../../assets/images/io-logo.png" style="width: 12rem;"/>
+    </a>
+    <span style="" class="burgerbar pr-3" (click)="toggleNav()">&#9776;</span>
     <div id="mySidenav" class="sidenav" [@navBar]="status">
       <a class="closebtn" (click)="toggleNav()">&times;</a>
       <a routerLink="/schedule" routerLinkActive="active" class="responsive-menu my-3 ml-4">Schedule</a>

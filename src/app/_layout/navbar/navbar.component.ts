@@ -8,7 +8,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     animations  : [
         trigger('navBar', [
             state('open', style({
-                width   : '300px',
+                width   : '70%',
                 opacity : 1
             })),
             state('closed', style({
