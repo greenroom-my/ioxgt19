@@ -5,12 +5,12 @@
 export const environment = {
     production     : false,
     firebaseConfig : {
-        apiKey            : 'AIzaSyDmfhjXrTTXjdN9TwuJlOMmxqMjS7WLmHY',
-        authDomain        : 'gt-iox.firebaseapp.com',
-        databaseURL       : 'https://gt-iox.firebaseio.com',
-        projectId         : 'gt-iox',
-        storageBucket     : 'gt-iox.appspot.com',
-        messagingSenderId : '181541607601',
+        apiKey            : '',
+        authDomain        : '',
+        databaseURL       : '',
+        projectId         : '',
+        storageBucket     : '',
+        messagingSenderId : '',
     }
 };
 
