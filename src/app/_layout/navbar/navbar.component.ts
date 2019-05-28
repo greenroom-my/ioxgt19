@@ -25,7 +25,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ]
 })
 export class NavbarComponent implements OnInit {
-    private status: string;
+    public status: string;
 
     constructor() {
     }
