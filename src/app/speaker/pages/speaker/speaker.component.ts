@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+import {AngularFirestore} from '@angular/fire/firestore';
 
 @Component({
-  selector: 'app-speaker',
-  templateUrl: './speaker.component.html',
-  styleUrls: ['./speaker.component.scss']
+    selector    : 'app-speaker',
+    templateUrl : './speaker.component.html',
+    styleUrls   : [ './speaker.component.scss' ]
 })
 export class SpeakerComponent implements OnInit {
 
-  constructor() { }
+    items: Observable<any[]>;
 
-  ngOnInit() {
-  }
+    constructor(db: AngularFirestore) {
+        this.items = db.collection('speakers', ref => ref.orderBy('name', 'asc')).valueChanges();
+    }
+
+    ngOnInit() {
+    }
 
 }
