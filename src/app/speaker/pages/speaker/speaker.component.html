@@ -9,11 +9,11 @@
   </section>
 </div>
 
-<div class="speakers-list mt-5 pt-5 bg-light">
-  <div class="container footer-margin">
+<div class="speakers-list mt-5 mb-md-0 mb-5 py-5 bg-light">
+  <div class="container">
     <div class="row">
 
-      <div class="col-6 col-lg-4 speakers-item" *ngFor="let item of items | async">
+      <div class="col-12 col-md-6 col-lg-3 speakers-item" *ngFor="let item of items | async">
         <div class="speakers-item--inner p-3">
           <div class="profile-image">
             <figure class="speaker" [ngStyle]="{ 'background-image': 'url('+item.photo_url+')'}"></figure>
