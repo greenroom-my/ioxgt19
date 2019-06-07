@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
 import {AngularFirestore} from '@angular/fire/firestore';
+import {SpeakerDialogComponent} from '../../../dialog/speaker-dialog/speaker-dialog.component';
 
 @Component({
     selector    : 'app-speaker',
@@ -18,4 +19,14 @@ export class SpeakerComponent implements OnInit {
     ngOnInit() {
     }
 
+    showDialog(speaker) {
+        this.dialog.open(SpeakerDialogComponent, {
+            width : '700px',
+            data  : {
+                ...speaker
+            }
+        });
+    }
+
 }
+
