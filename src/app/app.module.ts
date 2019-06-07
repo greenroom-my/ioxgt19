@@ -37,7 +37,7 @@ const appRoutes: Routes = [
         AppComponent,
         FooterComponent,
         NavbarComponent,
-        HomepageComponent
+        HomepageComponent,
     ],
     imports      : [
         AngularFireModule.initializeApp(environment.firebaseConfig),
