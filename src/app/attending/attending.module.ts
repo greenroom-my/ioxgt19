@@ -5,7 +5,7 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
     {
-        path     : 'attending',
+        path     : 'what-to-expect',
         children : [
             {
                 path      : '',
