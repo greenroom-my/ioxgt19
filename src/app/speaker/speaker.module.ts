@@ -5,6 +5,8 @@ import {RouterModule, Routes} from '@angular/router';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {MatDialogModule} from '@angular/material';
+import {SpeakerDialogComponent} from './component/speaker-dialog/speaker-dialog.component';
 
 const routes: Routes = [
     {
@@ -19,12 +21,20 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports      : [
+    imports         : [
         AngularFireModule.initializeApp(environment.firebaseConfig),
         CommonModule,
+        MatDialogModule,
         RouterModule.forRoot(routes),
         AngularFirestoreModule,
     ],
-    declarations : [ SpeakerComponent ]
+    declarations    : [
+        SpeakerComponent,
+        SpeakerDialogComponent
+    ],
+    entryComponents : [
+        SpeakerDialogComponent
+    ],
 })
+
 export class SpeakerModule {}
