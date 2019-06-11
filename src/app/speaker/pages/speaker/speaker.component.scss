@@ -1,3 +1,38 @@
-.min-height {
-  height: 60vh;
+.card-height {
+  min-height: 200px;
+}
+
+.speakers-list {
+  cursor: pointer;
+  .speakers-item {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.profile-image {
+  max-width: 150px;
+  margin: 0 auto 30px;
+}
+
+.job {
+  line-height: 1.0rem;
+}
+
+.bio {
+  padding: 20px;
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+.speaker {
+  width: 100%;
+  border-radius: 50%;
+  margin: 0;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

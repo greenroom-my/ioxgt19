@@ -1,8 +1,32 @@
-<div class="container footer-margin">
-  <section class="row min-height text-center align-items-center justify-content-center">
-    <div class="col-12">
-      <h3 class="mt-5 mb-0 font-weight-light text-center">Speaker Page Coming Soon Now</h3>
-      <img src="../../assets/images/io19_hashtag.gif" class="w-75">
+<div class="container">
+  <section class="row my-5 card-height">
+    <div class="col-lg-6 col-md-4 col-12 d-flex align-items-end">
+      <h3>Speakers</h3>
+    </div>
+    <div class="col-lg-6 col-md-8 col-12">
+      <img src="../../assets/images/android-speaker.png" class="w-100">
     </div>
   </section>
+</div>
+
+<div class="speakers-list mt-5 mb-md-0 mb-5 py-5 bg-light">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-3 speakers-item" *ngFor="let item of items | async">
+        <div class="speakers-item--inner p-3" (click)="showDialog(item)">
+          <div class="profile-image">
+            <figure class="speaker" [ngStyle]="{ 'background-image': 'url('+item.photo_url+')'}"></figure>
+          </div>
+          <h4 class="mb-0">{{item.name}}</h4>
+          <p class="mb-0 job">
+            <small>{{item.position}} @ {{item.job}}</small>
+          </p>
+          <div class="bio">
+            <p>{{item.short_bio}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
