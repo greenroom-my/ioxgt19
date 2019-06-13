@@ -16,3 +16,15 @@
     background-position: center center;
   }
 }
+
+@media (min-width: 768px) {
+  .fix-height {
+    height: 400px;
+  }
+}
+
+@media (min-width: 320px) {
+  .fix-height {
+    height: 430px;
+  }
+}

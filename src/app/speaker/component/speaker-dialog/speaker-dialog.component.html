@@ -1,23 +1,53 @@
-<div class="container bg-white pattern rounded pt-0 px-3 pb-3">
+<div class="container bg-white pattern rounded pt-0 px-3 pb-3 fix-height">
   <div class="row d-flex align-items-center">
-    <div class="col-3">
-      <div class="profile-image-container">
-        <figure class="image" [ngStyle]="{ 'background-image': 'url('+speaker.photo_url+')'}"></figure>
-      </div>
-    </div>
-    <div class="col-9">
+    <div class="col-12 p-0">
       <div>
         <div class="d-flex justify-content-end">
           <img src="assets/images/pattern.png">
         </div>
-        <h3 mat-dialog-title class="mb-0">{{speaker.name}}</h3>
-        <p class="mb-0 job">
-          <small>{{speaker.position}} @ {{speaker.job}}</small>
-        </p>
       </div>
-
-      <hr class="bg-light w-100 mt-0 my-3">
-      <span>{{speaker.bio}}</span>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <div class="profile-image-container">
+            <figure class="image" [ngStyle]="{ 'background-image': 'url('+speaker.photo_url+')'}"></figure>
+          </div>
+        </div>
+        <div class="col-md-9 col-12 d-flex align-items-center">
+          <div>
+            <h3 mat-dialog-title class="mb-0">{{speaker.name}}</h3>
+            <p class="mb-0 job">
+              <small>{{speaker.position}} <br>@ {{speaker.job}}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-light w-100 mt-0 my-4">
+    <div class="col-12">
+      <span class="pb-4">{{speaker.bio}}</span>
     </div>
   </div>
 </div>
+
+
+<!--<div class="col-3">-->
+<!--<div class="profile-image-container">-->
+<!--<figure class="image" [ngStyle]="{ 'background-image': 'url('+speaker.photo_url+')'}"></figure>-->
+<!--</div>-->
+<!--</div>-->
+<!---->
+<!--<div class="col-9">-->
+<!--<div>-->
+<!--<div class="d-flex justify-content-end">-->
+<!--<img src="assets/images/pattern.png">-->
+<!--</div>-->
+<!--<h3 mat-dialog-title class="mb-0">{{speaker.name}}</h3>-->
+<!--<p class="mb-0 job">-->
+<!--<small>{{speaker.position}} @ {{speaker.job}}</small>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+
+
