@@ -26,18 +26,24 @@
               <p class="mb-0 text-black-50">
                 <small>{{item.short_description_one}}</small>
               </p>
-              <p class="mb-0 text-black-50">
-                <small>{{item.topic_one}}</small>
-              </p>
+              <div class="width-topic mt-2">
+                <p class="pb-1 topic" *ngIf="item.topic_one">
+                  <small>{{item.topic_one}}</small>
+                </p>
+              </div>
             </div>
+
+
             <div class="col-12 p-4 border-bottom" *ngIf="item.classroom_two">
               <h3 class="mb-0">{{item.classroom_two}}</h3>
               <p class="mb-0 text-black-50">
                 <small>{{item.short_description_two}}</small>
               </p>
-              <p class="mb-0 text-black-50">
-                <small>{{item.topic_two}}</small>
-              </p>
+              <div class="width-topic mt-2">
+                <p class="pb-1 topic" *ngIf="item.topic_two">
+                  <small>{{item.topic_two}}</small>
+                </p>
+              </div>
             </div>
           </div>
         </div>
