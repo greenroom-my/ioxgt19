@@ -15,8 +15,34 @@ h3 {
   font-size: 1.4rem;
 }
 
-@media (min-width: 768px) {
-  //.schedule-time {
-  //  width: 120px;
-  //}
+p.topic {
+  border: 1px solid #62c13b;
+  border-radius: 12px;
+  //width: 10%;
+  text-align: center;
+  small {
+    color: #62c13b;
+  }
+}
+
+.width-topic {
+  width: 15%;
+}
+
+@media (max-width: 1024px) {
+  .width-topic {
+    width: 17%;
+  }
+}
+
+@media (max-width: 768px) {
+  .width-topic {
+    width: 25%;
+  }
+}
+
+@media (max-width: 425px) {
+  .width-topic {
+    width: 60%;
+  }
 }
