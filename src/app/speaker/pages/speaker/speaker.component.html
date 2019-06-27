@@ -18,10 +18,22 @@
           <div class="profile-image">
             <figure class="speaker" [ngStyle]="{ 'background-image': 'url('+item.photo_url+')'}"></figure>
           </div>
-          <h4 class="mb-0">{{item.name}}</h4>
-          <p class="mb-0 job">
-            <small>{{item.position}} @ {{item.job}}</small>
-          </p>
+          <h4 class="mb-1">{{item.name}}</h4>
+
+
+          <!--<p class="mb-0 job">-->
+            <!--<small>{{item.position}}</small>-->
+          <!--</p>-->
+          <!--<p class="mb-0">-->
+            <!--<small>{{item.job}}</small>-->
+          <!--</p>-->
+
+          <ul class="position-info pl-0 mb-0">
+            <li><small>{{item.position}}</small></li>
+            <li><small>{{item.job}}</small></li>
+          </ul>
+
+
           <div class="bio">
             <p>{{item.short_bio}}</p>
           </div>

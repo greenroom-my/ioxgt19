@@ -17,9 +17,13 @@
         <div class="col-md-9 col-12 d-flex align-items-center">
           <div>
             <h3 mat-dialog-title class="mb-0">{{speaker.name}}</h3>
-            <p class="mb-0 job">
-              <small>{{speaker.position}} <br>@ {{speaker.job}}</small>
-            </p>
+            <!--<p class="mb-0 job">-->
+              <!--<small>{{speaker.position}} <br> {{speaker.job}}</small>-->
+            <!--</p>-->
+            <ul class="position-info pl-0 mb-0">
+              <li><small>{{speaker.position}}</small></li>
+              <li><small>{{speaker.job}}</small></li>
+            </ul>
           </div>
         </div>
       </div>

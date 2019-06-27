@@ -17,6 +17,12 @@
   }
 }
 
+.position-info {
+  list-style: none;
+  line-height: 1.2rem;
+  padding-left: 0;
+}
+
 @media (min-width: 768px) {
   .fix-height {
     height: 400px;
