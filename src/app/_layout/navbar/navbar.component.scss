@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 99999;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #4285F4;
   overflow-x: hidden;
   transition: 0.5s;
@@ -16,10 +16,10 @@
   text-align: left;
 }
 
-.sidenav{
+.sidenav {
   .responsive-menu {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -40,8 +40,9 @@
 }
 
 .burgerbar {
-  font-size:30px;
-  cursor:pointer;
+  font-size: 32px;
+  cursor: pointer;
+  color: #4285f4;
 }
 
 @media screen and (max-height: 450px) {
