@@ -17,13 +17,16 @@
     <a class="nav-link mr-auto" routerLink="">
       <img src="../../../assets/images/io-logo.png" style="width: 12rem;"/>
     </a>
-    <span style="" class="burgerbar pr-3" (click)="toggleNav()">&#9776;</span>
+    <span class="burgerbar pr-3" (click)="toggleNav()">&#9776;</span>
     <div id="mySidenav" class="sidenav" [@navBar]="status">
       <a class="closebtn" (click)="toggleNav()">&times;</a>
-      <a routerLink="/schedule" routerLinkActive="active" class="responsive-menu my-3 ml-4">Schedule</a>
-      <a routerLink="/what-to-expect" class="responsive-menu my-3 ml-4">What to expect</a>
-      <a routerLink="/speaker" class="responsive-menu my-3 ml-4">Speakers</a>
-      <a class="btn btn-light text-primary my-3 ml-4" href="https://www.eventbrite.sg/e/google-io-extended-george-town-2019-tickets-62453451956#tickets">Buy Now</a>
+      <a routerLink="/schedule" routerLinkActive="active" class="responsive-menu my-3 ml-4" (click)="toggleNav()">Schedule</a>
+      <a routerLink="/what-to-expect" class="responsive-menu my-3 ml-4" (click)="toggleNav()">What to expect</a>
+      <a routerLink="/speaker" class="responsive-menu my-3 ml-4" (click)="toggleNav()">Speakers</a>
+      <a class="btn btn-light text-primary my-3 ml-4" href="https://www.eventbrite.sg/e/google-io-extended-george-town-2019-tickets-62453451956#tickets" (click)="toggleNav()">Buy Now</a>
     </div>
   </div>
 </div>
+
+
+
